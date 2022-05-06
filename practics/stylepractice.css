@@ -1,0 +1,52 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.outerdiv{
+    height: 5rem;
+    width: 5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.innerdiv{
+    z-index: -1;
+    bottom: 0%;
+    width: 100%;
+    position: absolute;
+    background-color: red;
+    animation: none;
+}
+button{
+/* background-color: saddlebrown; */
+width: 100%;
+height: 100%;
+border: none;
+outline: none;
+background: transparent;
+cursor: pointer;
+}
+
+@keyframes slidedownbottom{
+    from{
+          height: 0%;
+          top: 100%;
+    }
+    to{
+        height: 100%;
+        top: 0%;
+    }
+}
+@keyframes slidebottomup{
+    from{
+          height: 100%;
+          top: 0%;
+    }
+    to{
+        height: 0%;
+        top: 0%;
+    }
+}
